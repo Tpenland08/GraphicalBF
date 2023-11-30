@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "repl-nix-new-graphicalbf-test"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_new_graphicalbf_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lambda-interpreter = "^1.1"
+replit = "3.3.2"
+keyboard = "0.13.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
