@@ -2,7 +2,7 @@
 import logging
 
 #Initialize log directory
-logging.basicConfig(filename="interpreter/logs/logs.txt")
+logging.basicConfig(level = logging.INFO,filename="interpreter/logs/logs.txt")
 
 # The function to execute GraphicalBF programs
 def gbfExec(prgm: str, input: str):
@@ -52,7 +52,7 @@ def gbfExec(prgm: str, input: str):
       case "*":
          gbfPush()
       case _:
-        logging.info("invalid charater found")
+        logging.info(f"invalid charater {prgm[prgmPtr]}")
     prgmPtr += 1
   return(0)
 
